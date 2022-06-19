@@ -15,7 +15,7 @@
 
 // <<===========================HEADER===========================>>
 
-header {
+header#header {
     border-bottom: 2px solid #D3DDE6;
     padding-top: 23px;
     // padding-bottom: 28px;
@@ -45,20 +45,24 @@ header {
         & .phone {
             display: flex;
             align-items: center;
-            margin-right: 45px;
+            margin-right: 33px;
         }
         & a {
-            color: $text_color;
+            color: #264158;
             text-decoration: none;
             font-family: $font_family;
             font-size: $font_size;
             line-height: 2.1875rem;
+            display: flex;
+            align-items: center;
             &:hover {
                 color: #F79781;
             }
+            &:hover .icon {
+                fill: #F79781;
+            }
         }
-        .map_icon,
-        .phone_icon {
+        .icon {
             margin-right: 12px;
         }
     }
@@ -87,18 +91,21 @@ header {
                     border-radius: 150px;
                     text-decoration: underline;
                 }
-
                 &:last-of-type {
+                    color: #536779;
                     margin-right: 15px;
                     font-weight: 700;
                 }
                 & a {
                     position: relative;
-                    color: $text_color;
+                    color: #264158;
                     text-decoration: none;
                     font-family: $font_family;
                     font-size: $font_size;
                     line-height: 3rem;
+                    &:last-of-type {
+                        color: #536779;
+                    }
                     &:focus {
                         // outline: none;
                         // border: 1px solid #fff;
@@ -134,15 +141,170 @@ header {
 
 
 
-// <<===========================SECTION #contacts ===========================>>
+// <<===========================SECTION #contacts & map===========================>>
 
 #contacts {
     padding-top: 150px;
+}
+
+
+// <<===========================/SECTION #contacts & map===========================>>
+
+
+// <<===========================SECTION #contact_form===========================>>
+
+#contact_form {
     padding-bottom: 150px;
 }
 
 
-// <<===========================/SECTION #contacts ===========================>>
+// <<===========================/SECTION #contact_form===========================>>
+
+
+// <<===========================Footer===========================>>
+
+footer#footer {
+    padding-top: 50px;
+    padding-bottom: 211px;
+    border-top: 2px solid #D3DDE6;
+    display: flex;
+    & .footer_upper_line {
+        display: flex;
+        justify-content: flex-start;
+        // justify-content: space-between; //for mobile when delete margin-right
+    }
+    & .wrap_foot_menu {
+        display: flex;
+        margin-right: 80px;
+    }
+    & .footer_menu_second {
+        margin-right: 40px;
+        & li {
+            margin-bottom: 18px;
+        }
+    }
+    & .footer_menu_first {
+        & li {
+            margin-bottom: 18px;
+            &:last-of-type {
+                font-weight: 700;
+                & svg {
+                    margin-left: 15px;
+                }
+            }
+        }
+        
+    }
+    & .footer_menu_third {
+        margin-bottom: 15px;
+        & li {
+            // margin-bottom: 15px;
+            & a {
+                line-height: 2.4375;
+                // line-height: 3.4375rem;
+            }
+        }
+    }
+    & .socials {
+        & ul {
+            display: flex;
+        }
+        
+    }
+    & ul {
+        list-style: none;
+        & li {
+            & a {
+                color: #264158;
+                text-decoration: none;
+                font-family: $font_family;
+                font-size: $font_size;
+                line-height: 1.67625rem;
+                display: flex;
+                align-items: center;
+                &:hover {
+                    color: #F79781;
+                }
+                &:hover .footer_wallet {
+                    fill: #F79781;
+                }
+            }
+        }
+    }
+    & .footer_soc_wrap {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 60px;
+        height: 60px;
+        background-color: #D3DDE6;
+        border-radius: 5px;
+        margin-right: 25px;
+        & svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &:hover svg {
+            fill: #F79781;
+        }
+    }
+    & .footer_logo {
+        margin-right: 215.62px;
+    }
+    & .wrap_soc_menu {
+        font-weight: 700;
+    }
+    & .container {
+        position: relative;
+    }
+    & .footer_contacts_wrap {
+        margin-bottom: 25.88px;
+        position: absolute; // maybe make position: relative on mobile;
+        top: 118px;
+        left: 0;
+        & a {
+            color: #536779;
+            text-decoration: none;
+            font-family: $font_family;
+            font-size: $font_size;
+            line-height: 1.67625rem;
+            display: flex;
+            align-items: center;
+            &:hover {
+                color: #F79781;
+            }
+            &:hover .icon_footer {
+                fill: #F79781;
+            }
+        }
+        & div {
+            margin-bottom: 20px;
+            // padding-bottom: 20px;
+            & svg {
+                margin-right: 15px;
+                &.map_icon_mg {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    button {
+        position: absolute; // maybe make position: relative on mobile;
+        top: 328.88px;
+        left: 0;
+    }
+    .phone_icon {
+        font-weight: 300;
+    }
+    .phone_icon_bold {
+        font-weight: 700;
+    }
+}
+
+
+// <<===========================/Footer===========================>>
 
 
 // h1 {

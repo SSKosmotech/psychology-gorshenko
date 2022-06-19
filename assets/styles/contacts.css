@@ -53,7 +53,6 @@ img {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.125rem;
-  letter-spacing: 1px;
   background: radial-gradient(62.25% 62.25% at 50% 50%, rgba(83, 103, 121, 0.2) 0%, rgba(211, 221, 230, 0.174) 100%), #98C5EB;
   border-radius: 150px;
   border: 3px solid transparent;
@@ -162,53 +161,57 @@ img {
   transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-header {
+header#header {
   border-bottom: 2px solid #D3DDE6;
   padding-top: 23px;
 }
-header .wrap_menu {
+header#header .wrap_menu {
   display: flex;
   flex-direction: column;
 }
-header .menu_top_wrap,
-header .menu_bottom_wrap {
+header#header .menu_top_wrap,
+header#header .menu_bottom_wrap {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-header .menu_top_wrap {
+header#header .menu_top_wrap {
   justify-content: flex-start;
   margin-bottom: 36px;
 }
-header .menu_top_wrap .logo {
+header#header .menu_top_wrap .logo {
   margin-right: 285.62px;
 }
-header .menu_top_wrap .address {
+header#header .menu_top_wrap .address {
   display: flex;
   align-items: center;
   margin-right: 31px;
 }
-header .menu_top_wrap .phone {
+header#header .menu_top_wrap .phone {
   display: flex;
   align-items: center;
-  margin-right: 45px;
+  margin-right: 33px;
 }
-header .menu_top_wrap a {
-  color: #536779;
+header#header .menu_top_wrap a {
+  color: #264158;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 1.375rem;
   line-height: 2.1875rem;
+  display: flex;
+  align-items: center;
 }
-header .menu_top_wrap a:hover {
+header#header .menu_top_wrap a:hover {
   color: #F79781;
 }
-header .menu_top_wrap .map_icon,
-header .menu_top_wrap .phone_icon {
+header#header .menu_top_wrap a:hover .icon {
+  fill: #F79781;
+}
+header#header .menu_top_wrap .icon {
   margin-right: 12px;
 }
-header .main_menu ul {
+header#header .main_menu ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,12 +219,12 @@ header .main_menu ul {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-header .main_menu ul li {
+header#header .main_menu ul li {
   position: relative;
   margin-right: 78.4px;
   padding-bottom: 28px;
 }
-header .main_menu ul li::after {
+header#header .main_menu ul li::after {
   content: "";
   display: block;
   position: absolute;
@@ -233,29 +236,33 @@ header .main_menu ul li::after {
   border-radius: 150px;
   text-decoration: underline;
 }
-header .main_menu ul li:last-of-type {
+header#header .main_menu ul li:last-of-type {
+  color: #536779;
   margin-right: 15px;
   font-weight: 700;
 }
-header .main_menu ul li a {
+header#header .main_menu ul li a {
   position: relative;
-  color: #536779;
+  color: #264158;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 1.375rem;
   line-height: 3rem;
 }
-header .main_menu ul li:hover::after {
+header#header .main_menu ul li a:last-of-type {
+  color: #536779;
+}
+header#header .main_menu ul li:hover::after {
   background-color: #F79781;
 }
-header.scroll {
+header#header.scroll {
   height: 86px;
   -webkit-box-shadow: 0 0 5px #5474FD;
   box-shadow: 0 0 5px #5474FD;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
 }
-header.fixed {
+header#header.fixed {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -268,7 +275,136 @@ header.fixed {
 
 #contacts {
   padding-top: 150px;
+}
+
+#contact_form {
   padding-bottom: 150px;
+}
+
+footer#footer {
+  padding-top: 50px;
+  padding-bottom: 211px;
+  border-top: 2px solid #D3DDE6;
+  display: flex;
+}
+footer#footer .footer_upper_line {
+  display: flex;
+  justify-content: flex-start;
+}
+footer#footer .wrap_foot_menu {
+  display: flex;
+  margin-right: 80px;
+}
+footer#footer .footer_menu_second {
+  margin-right: 40px;
+}
+footer#footer .footer_menu_second li {
+  margin-bottom: 18px;
+}
+footer#footer .footer_menu_first li {
+  margin-bottom: 18px;
+}
+footer#footer .footer_menu_first li:last-of-type {
+  font-weight: 700;
+}
+footer#footer .footer_menu_first li:last-of-type svg {
+  margin-left: 15px;
+}
+footer#footer .footer_menu_third {
+  margin-bottom: 15px;
+}
+footer#footer .footer_menu_third li a {
+  line-height: 2.4375;
+}
+footer#footer .socials ul {
+  display: flex;
+}
+footer#footer ul {
+  list-style: none;
+}
+footer#footer ul li a {
+  color: #264158;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.67625rem;
+  display: flex;
+  align-items: center;
+}
+footer#footer ul li a:hover {
+  color: #F79781;
+}
+footer#footer ul li a:hover .footer_wallet {
+  fill: #F79781;
+}
+footer#footer .footer_soc_wrap {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 60px;
+  height: 60px;
+  background-color: #D3DDE6;
+  border-radius: 5px;
+  margin-right: 25px;
+}
+footer#footer .footer_soc_wrap svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer#footer .footer_soc_wrap:hover svg {
+  fill: #F79781;
+}
+footer#footer .footer_logo {
+  margin-right: 215.62px;
+}
+footer#footer .wrap_soc_menu {
+  font-weight: 700;
+}
+footer#footer .container {
+  position: relative;
+}
+footer#footer .footer_contacts_wrap {
+  margin-bottom: 25.88px;
+  position: absolute;
+  top: 118px;
+  left: 0;
+}
+footer#footer .footer_contacts_wrap a {
+  color: #536779;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.67625rem;
+  display: flex;
+  align-items: center;
+}
+footer#footer .footer_contacts_wrap a:hover {
+  color: #F79781;
+}
+footer#footer .footer_contacts_wrap a:hover .icon_footer {
+  fill: #F79781;
+}
+footer#footer .footer_contacts_wrap div {
+  margin-bottom: 20px;
+}
+footer#footer .footer_contacts_wrap div svg {
+  margin-right: 15px;
+}
+footer#footer .footer_contacts_wrap div svg.map_icon_mg {
+  margin-right: 20px;
+}
+footer#footer button {
+  position: absolute;
+  top: 328.88px;
+  left: 0;
+}
+footer#footer .phone_icon {
+  font-weight: 300;
+}
+footer#footer .phone_icon_bold {
+  font-weight: 700;
 }
 
 .hamb_menu {
