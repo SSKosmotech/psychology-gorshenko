@@ -1,3 +1,15 @@
+$font_family: 'Montserrat', sans-serif;
+$text_color: #536779;
+$font_size: 1.375rem;
+$line_height: 2.1875rem;
+// $background_color_white: #232323;
+
+$base_fz: 16;
+
+@mixin fz($size_in_px) {
+    font-size:($size_in_px/$base_fz)+rem;
+}
+
 *, *::after, *::before {
     padding: 0;
     margin: 0;
@@ -9,10 +21,75 @@ html, body {
     height: 100%;
 }
 
+$font_family: 'Montserrat', sans-serif;
+$text_color: #536779;
+$font_size: 1.375rem;
+$line_height: 2.1875rem;
+// $background_color_white: #232323;
+
+$base_fz: 16;
+
+@mixin fz($size_in_px) {
+    font-size:($size_in_px/$base_fz)+rem;
+}
+
+body {
+    font-family: $font_family;
+    color: $text_color;
+    font-size: $font_size;
+    line-height: $line_height;
+    &.lock {
+        overflow: hidden;
+    }
+}
+
 a,
 button,
 svg,
+:after,
 input[type="search"],
 input[type="button"] {
     transition: all .2s ease;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    vertical-align: top;
+}
+
+.btn {
+    display: inline-block;
+    height: 79px;
+    padding: 0 26px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    line-height: 3.4375rem;
+    font-family: $font_family;
+    font-weight: 700;
+    @include fz(18);
+    letter-spacing: 1px;
+    background: radial-gradient(62.25% 62.25% at 50% 50%, rgba(83, 103, 121, 0.2) 0%, rgba(211, 221, 230, 0.174) 100%), #98C5EB;
+    border-radius: 150px;
+    border: 3px solid transparent;
+    &:hover {
+        // background-position: left top;
+        // color: #F79781;
+        background: radial-gradient(62.25% 62.25% at 50% 50%, rgba(83, 103, 121, 0.2) 0%, rgba(211, 221, 230, 0.174) 100%), #F79781;
+
+    }
+    //focus на кнопці — під питанням чи його саме таким робити чи удалити і лишити той що за замовчуванням?
+    &:focus {
+        outline: none;
+        border: 3px solid #F79781;
+    }
 }
