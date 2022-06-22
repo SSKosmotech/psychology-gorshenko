@@ -237,8 +237,14 @@ header#header .main_menu ul li::after {
   text-decoration: underline;
 }
 header#header .main_menu ul li:last-of-type {
-  margin-right: 15px;
   font-weight: 700;
+  margin-right: 0;
+}
+header#header .main_menu ul li:last-of-type a {
+  display: flex;
+}
+header#header .main_menu ul li:last-of-type svg {
+  margin-left: 10px;
 }
 header#header .main_menu ul li a {
   position: relative;
@@ -276,6 +282,8 @@ section#contacts {
   padding-top: 150px;
 }
 section#contacts h1 {
+  font-family: "Cormorant", sans-serif;
+  text-transform: uppercase;
   color: #264158;
   font-size: 3.75rem;
   line-height: 3.4375rem;
@@ -284,6 +292,7 @@ section#contacts h1 {
 section#contacts .contacts_section_wrap {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 72px;
 }
 section#contacts .contacts_wrap {
   display: flex;
@@ -291,14 +300,120 @@ section#contacts .contacts_wrap {
   width: 100%;
   height: 458px;
   background-color: #F9FAFB;
-  padding: 43px 53px;
+  padding: 58px 53px 50px 53px;
+}
+section#contacts .contacts_wrap a {
+  color: #536779;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.67625rem;
+  display: flex;
+  align-items: center;
+}
+section#contacts .contacts_wrap a:hover .icon_contacts {
+  fill: #F79781;
+}
+section#contacts .contacts_wrap a:hover {
+  color: #F79781;
+}
+section#contacts .contacts_wrap .contacts_icons {
+  display: flex;
+  align-items: center;
+}
+section#contacts .contacts_wrap .contacts_icons svg {
+  margin-right: 16px;
+}
+section#contacts .contacts_wrap .contacts_icons .phone_icon_bold {
+  font-weight: 700;
+}
+section#contacts .contacts_wrap p {
+  font-weight: 700;
+  color: #536779;
+  line-height: 2.1875rem;
+  font-size: 1.375rem;
+  margin-bottom: 5px;
+}
+section#contacts .cont_left_wrap div,
+section#contacts .cont_right_wrap div {
+  margin-bottom: 50px;
+}
+section#contacts .cont_left_wrap div:last-child,
+section#contacts .cont_right_wrap div:last-child {
+  margin-bottom: 0;
 }
 section#contacts .cont_left_wrap {
   margin-right: 71px;
 }
+section#contacts .cont_right_wrap a {
+  text-decoration: underline;
+}
+section#contacts .contacts_map_wrap {
+  max-width: 628px;
+  width: 100%;
+  height: 458px;
+  border: 1px solid green;
+}
+section#contacts .contacts_map_wrap p {
+  color: #264158;
+  font-size: 1.25rem;
+  line-height: 3.4375rem;
+  margin-bottom: 10px;
+}
+section#contacts .contacts_map_wrap .wrap_map {
+  overflow: hidden;
+  max-width: 628px;
+  width: 100%;
+  height: 393px;
+  border: 1px solid pink;
+  border-bottom-right-radius: 100%;
+}
 
-#contact_form {
+section#contact_form {
   padding-bottom: 150px;
+}
+section#contact_form .wrap_p_form {
+  max-width: 511px;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 40px;
+}
+section#contact_form form {
+  display: flex;
+  justify-content: space-between;
+}
+section#contact_form input[type=text],
+section#contact_form input[type=tel] {
+  border: 1px solid #99C1E2;
+  height: 78px;
+  max-width: 320px;
+  width: 100%;
+  border-radius: 150px;
+  padding-left: 61px;
+  padding-right: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 3.4375rem;
+  text-transform: uppercase;
+  color: #98C5EB;
+}
+section#contact_form input[type=text]::placeholder,
+section#contact_form input[type=tel]::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #D3DDE6;
+  opacity: 1;
+  /* Firefox */
+}
+section#contact_form input[type=text]:-ms-input-placeholder,
+section#contact_form input[type=tel]:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: D3DDE6;
+}
+section#contact_form input[type=text]::-ms-input-placeholder,
+section#contact_form input[type=tel]::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: D3DDE6;
 }
 
 footer#footer {
@@ -420,9 +535,6 @@ footer#footer button {
   position: absolute;
   top: 328.88px;
   left: 0;
-}
-footer#footer .phone_icon {
-  font-weight: 300;
 }
 footer#footer .phone_icon_bold {
   font-weight: 700;
