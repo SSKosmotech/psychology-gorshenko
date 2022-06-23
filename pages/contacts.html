@@ -39,6 +39,8 @@
     <meta name="twitter:description" content="This is the first project, the first website with HTML and CSS created by student of Beetroot Academy - Simonov Serhii — Bhromaon||Simonov" />
     <meta name="twitter:image" content="https://sskosmotech.github.io/Kosmotech-Beetroot-Academy-Homework/17-exam-bhromaon/../assets/images/first_screen_bg.jpg" />
     
+    <link rel="stylesheet" href="../assets/plugins/leaflet/leaflet.css">
+    
     <link rel="stylesheet" href="../assets/styles/fonts_style.min.css">
     <link rel="stylesheet" href="../assets/styles/contacts.min.css">
     <link rel="stylesheet" href="../assets/styles/respons.min.css">
@@ -232,9 +234,13 @@
                     <div class="contacts_map_wrap">
                         <p>Тут знаходимось ми</p>
                         <div class="wrap_map">
-                            <div class="map">
-                                <img src="#" alt="Наша адреса на Google карті">
+
+                            <div id="map">
+                                <!-- <a href="javascript:void(0)" id="load_map_link">
+                                    <img class=" lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="assets/images/map_img.png" alt="Наша адреса на Google карті" >
+                                </a> -->
                             </div>
+
                         </div>
                     </div>
 
@@ -252,14 +258,14 @@
                 </div>
 
                 <form action="#">
-                    <!-- <label for="name"></label> -->
                     <input type="text" id="name" name="name" placeholder="Марія" required>
+                    <label for="name"></label>
                     
-                    <!-- <label for="tel"></label> -->
                     <input type="tel" id="tel" name="tel" placeholder="+ 38 (000) 000-00-00" required>
+                    <label for="tel"></label>
                     
-                    <!-- <label for="worries"></label> -->
                     <input type="text" id="worries" name="worries" placeholder="Що вас турбує?" required>
+                    <label for="worries"></label>
 
                     <button type="submit" class="btn">зателефонуйте мені</button>
                 </form>
@@ -392,8 +398,12 @@
 
     </footer>
 
-    <!-- <script src="../assets/js/jquery-3.6.0.min.js" ></script> -->
+    <script src="../assets/js/jquery-3.6.0.min.js" ></script>
     <script src="../assets/js/lazyload.prod.js"></script>
+
+    <script src="../assets/plugins/leaflet/leaflet.js"></script>
+
+    <script src="../assets/js/main.js"></script>
 
     <!-- <script>
 

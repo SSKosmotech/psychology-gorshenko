@@ -55,14 +55,14 @@ img {
   font-size: 1.125rem;
   background: radial-gradient(62.25% 62.25% at 50% 50%, rgba(83, 103, 121, 0.2) 0%, rgba(211, 221, 230, 0.174) 100%), #98C5EB;
   border-radius: 150px;
-  border: 3px solid transparent;
+  border: 1px solid transparent;
 }
 .btn:hover {
   background: radial-gradient(62.25% 62.25% at 50% 50%, rgba(83, 103, 121, 0.2) 0%, rgba(211, 221, 230, 0.174) 100%), #F79781;
 }
 .btn:focus {
   outline: none;
-  border: 3px solid #F79781;
+  border: 1px solid #F79781;
 }
 
 /*!
@@ -365,8 +365,10 @@ section#contacts .contacts_map_wrap .wrap_map {
   max-width: 628px;
   width: 100%;
   height: 393px;
-  border: 1px solid pink;
-  border-bottom-right-radius: 100%;
+  border-bottom-right-radius: 60% 100%;
+}
+section#contacts #map {
+  height: 393px;
 }
 
 section#contact_form {
@@ -384,6 +386,7 @@ section#contact_form form {
 }
 section#contact_form input[type=text],
 section#contact_form input[type=tel] {
+  color: #99C1E2;
   border: 1px solid #99C1E2;
   height: 78px;
   max-width: 320px;
@@ -396,7 +399,6 @@ section#contact_form input[type=tel] {
   font-size: 1.125rem;
   line-height: 3.4375rem;
   text-transform: uppercase;
-  color: #98C5EB;
 }
 section#contact_form input[type=text]::placeholder,
 section#contact_form input[type=tel]::placeholder {
@@ -414,6 +416,11 @@ section#contact_form input[type=text]::-ms-input-placeholder,
 section#contact_form input[type=tel]::-ms-input-placeholder {
   /* Microsoft Edge */
   color: D3DDE6;
+}
+section#contact_form input[type=text]:focus,
+section#contact_form input[type=tel]:focus {
+  outline: none;
+  border: 1px solid #F79781;
 }
 
 footer#footer {

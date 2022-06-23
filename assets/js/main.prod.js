@@ -1,0 +1,1 @@
+"use strict";$(function(){var t=L.map("map").setView([49.83203927380617,24.04153234846184],14);L.tileLayer("http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}",{subdomains:["mt0","mt1","mt2","mt3"]}).addTo(t)});
