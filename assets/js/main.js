@@ -12,7 +12,7 @@ $(function(){
     // функція побудови карти
     function initMap(){
         
-        let map = L.map('map').setView([49.83203927380617, 24.04153234846184], 13);
+        let map = L.map('map').setView([49.81984911958817, 24.028876433560518], 12);
         
         // Google Streets:
         L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
@@ -65,14 +65,14 @@ $(function(){
         let pinIcon = L.icon({
             iconUrl: '../assets/plugins/leaflet/images/pin.png',
             iconSize: [50, 65],
-            iconAnchor: [106, 106],
-            popupAnchor: [-53, -90],
+            iconAnchor: [25, 65],
+            popupAnchor: [0, -65],
 
         });
 
         // будую dom для виводу кастомного маркеру (і popup) на карту
         // L.marker([49.83203927380617, 24.04153234846184], {icon: pinIcon}).addTo(map)
-        L.marker([49.83151037380617, 24.06183234846184], {icon: pinIcon}).addTo(map)
+        L.marker([49.83084911958817, 24.041876433560518], {icon: pinIcon}).addTo(map)
         .bindPopup(`
         <div class="popup">
             <img class="popup_img" src="../assets/images/logo-bird-gorshenko.svg">
@@ -84,7 +84,6 @@ $(function(){
         `)
         // .openPopup();
     };
-
 
 
 
