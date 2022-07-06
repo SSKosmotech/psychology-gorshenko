@@ -4,9 +4,507 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about-us</title>
+    
+    <title>Про нас || Gorshenko Psychology</title>
+    
+    <meta name="description" content="This is the first project, the first website with HTML and CSS created by student of Beetroot Academy - Simonov Serhii — Bhromaon||Simonov">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="robots" content="all" />
+    <meta name="revisit-after" content="1 days" />
+
+    <!-- Open Graph Basic-->
+    <meta property="og:title" content="Project 1. First website with HTML and CSS - Bhromaon||Simonov" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sskosmotech.github.io/Kosmotech-Beetroot-Academy-Homework/17-exam-bhromaon/" />
+    <meta property="og:image" content="https://sskosmotech.github.io/Kosmotech-Beetroot-Academy-Homework/17-exam-bhromaon/../assets/images/first_screen_bg.jpg" />
+    <meta property="og:image:width" content="1770" />
+    <meta property="og:image:height" content="820" />   
+    <meta property="og:description" 
+          content="This is the first project, the first website with HTML and CSS created by 
+          student of Beetroot Academy - Simonov Serhii — Bhromaon||Simonov" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Open Graph Twitter -->
+    <meta name="twitter:title" content="Project 1. First website with HTML and CSS - Bhromaon||Simonov" />
+    <meta name="twitter:description" content="This is the first project, the first website with HTML and CSS created by student of Beetroot Academy - Simonov Serhii — Bhromaon||Simonov" />
+    <meta name="twitter:image" content="https://sskosmotech.github.io/Kosmotech-Beetroot-Academy-Homework/17-exam-bhromaon/../assets/images/first_screen_bg.jpg" />
+    
+    <link rel="stylesheet" href="../assets/plugins/leaflet/leaflet.css">
+    
+    <link rel="stylesheet" href="../assets/styles/fonts_style.min.css">
+    <link rel="stylesheet" href="../assets/styles/contacts.min.css">
+    <link rel="stylesheet" href="../assets/styles/respons.min.css">
 </head>
 <body>
+
+    <!-- <div id="side_block">
+        <div class="wrapper">
+
+            <div class="header_logo">
+                <div class="pic">
+                    <a href="#">
+                        <img src="../assets/images/logo_bhromaon.svg" alt="Logo Bhromaon">
+                    </a>
+                </div>
+            </div>
+
+
+            <nav class="mobile_menu">
+                    <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <li><a itemprop="url" href="#who_we_are">Who We Are</a></li>
+                        <li><a itemprop="url" href="#what_we_do">What We Do</a></li>
+                        <li><a itemprop="url" href="#travel_with_us_pool">Travel With Us</a></li>
+                        <li><a itemprop="url" href="#contact_us">Contact Us</a></li>
+                        
+                    </ul>
+            </nav>   
+
+            <button class="hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button> 
+
+        </div>
+    </div> -->
+
+    <!-- <div id="page_overlay"></div> -->
+
+
+
+
+    <header id="header">
+        <div class="container">
+            <div class="wrap_menu">
+
+                <div class="menu_top_wrap">
+                    <div class="logo">
+                        <div class="pic">
+                            <a href="#">
+                                <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="../assets/images/logo-gorshenko.png" alt="logo Gorshenko">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="address">
+
+                        <a href="https://goo.gl/maps/p1smwKevMyWX4RhLA" rel="nofollow, noreferrer" target="_blank">
+                            <svg class="icon" width="30" height="40" viewbox="0 0 30 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30 15.4545C30 6.89394 23.3088 0 15 0C6.69118 0 0 6.89394 0 15.4545C0 24.0152 15 40 15 40C15 40 30 24.0152 30 15.4545ZM8.0147 15.1515C8.0147 11.2121 11.1765 7.95455 15 7.95455C18.8235 7.95455 21.9853 11.1364 21.9853 15.1515C21.9853 19.0909 18.8971 22.3485 15 22.3485C11.1765 22.3485 8.0147 19.0909 8.0147 15.1515Z" />
+                            </svg>
+                            Львів, вул. Зелена 44
+                        </a>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:+380974070110">
+                            <svg class="icon" width="40" height="40" viewbox="0 0 40 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="5"/>
+                                <path d="M23.7333 22.1427C22.6667 23.3232 22.6667 24.5037 21.6 24.5037C20.5333 24.5037 19.4667 23.3232 18.4 22.1427C17.3333 20.9622 16.2667 19.7817 16.2667 18.6012C16.2667 17.4207 17.3333 17.4207 18.4 16.2402C19.4667 15.0597 16.2667 11.5182 15.2 11.5182C14.1333 11.5182 12 15.0597 12 15.0597C12 17.4207 14.192 22.2076 16.2667 24.5037C18.3413 26.7998 22.6667 29.2257 24.8 29.2257C24.8 29.2257 28 26.8647 28 25.6842C28 24.5037 24.8 20.9622 23.7333 22.1427Z" fill="white"/>
+                            </svg>
+                            +38 (097) 407-01-10
+                        </a>
+                    </div>
+                    <button class="btn btn-callback" type="button">Вам передзвонити?</button>
+                    <div class="hamb_menu">
+                        <button class="hamburger hamburger--spin" type="button">
+                            <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu_bottom_wrap">
+                    <nav class="main_menu">
+                        <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <li><a itemprop="url" href="#">Головна</a></li>
+                            <li><a itemprop="url" href="#">Про нас</a></li>
+                            <li><a itemprop="url" href="#">Послуги</a></li>
+                            <li><a itemprop="url" href="#">Ціни</a></li>
+                            <li><a itemprop="url" href="#">Психологам</a></li>
+                            <li><a itemprop="url" href="#">Семінари</a></li>
+                            <li><a itemprop="url" href="#">Відгуки</a></li>
+                            <li><a itemprop="url" href="#">Контакти</a></li>
+                            <li>
+                                <a itemprop="url" href="#" class="header_wallet_text">
+                                    Оплата
+                                    <svg class="header_wallet" width="40" height="37" viewbox="0 0 40 37" fill="#536779" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M39.1911 18.9967H36.3211V12.1691C36.3211 12.1378 36.3178 12.1072 36.316 12.0763V6.81856C36.316 6.46104 36.0028 6.17125 35.6162 6.17125H28.1962L21.7814 0.237457C21.6501 0.116097 21.4721 0.0478935 21.2865 0.0478935C21.1009 0.0478935 20.9229 0.116076 20.7916 0.237457L15.9546 4.71172L13.6807 2.60829C13.4074 2.35552 12.9643 2.35552 12.691 2.60829L8.8346 6.1754C8.80913 6.17279 8.78324 6.17125 8.757 6.17125H0.809175C0.422664 6.17125 0.109375 6.46104 0.109375 6.81856V13.7079C0.109375 13.729 0.110642 13.7499 0.112797 13.7705V35.1951C0.112797 36.1639 0.964908 36.9521 2.01226 36.9521H34.4216C35.469 36.9521 36.3211 36.1639 36.3211 35.1951V28.3675H39.1911C39.5777 28.3675 39.8909 28.0777 39.8909 27.7202V19.6441C39.8909 19.2865 39.5776 18.9967 39.1911 18.9967ZM34.9164 7.4659V10.4747C34.7584 10.4351 34.593 10.4121 34.4216 10.4121H32.7808L29.5957 7.4659H34.9164ZM21.2865 1.61065L30.8015 10.4121H28.6774L20.2245 2.59302L21.2865 1.61065ZM19.2348 3.50856L26.6979 10.4121H22.1173L16.9444 5.62716L19.2348 3.50856ZM13.1858 3.98149L14.9649 5.62714L15.9546 6.54258L20.1378 10.4121H18.2303L12.2321 4.86369L13.1858 3.98149ZM16.2508 10.4121H6.23386L11.2423 5.77923L16.2508 10.4121ZM4.25442 10.4121H2.01226C1.8378 10.4121 1.6696 10.4357 1.509 10.4766V7.4659H7.43949L4.25442 10.4121ZM34.9215 35.1951C34.9215 35.45 34.6972 35.6575 34.4216 35.6575H2.01226C1.73666 35.6575 1.51242 35.45 1.51242 35.1951V12.1691C1.51242 11.9142 1.73666 11.7067 2.01226 11.7067H34.4216C34.6801 11.7067 34.8908 11.8898 34.9164 12.1226V13.7079C34.9164 13.7333 34.9185 13.7583 34.9215 13.783V18.9968H28.5608C25.7678 18.9968 23.4955 21.0986 23.4955 23.6821C23.4955 26.2657 25.7678 28.3676 28.5608 28.3676H34.9215V35.1951H34.9215ZM38.4913 27.0729H36.3211H34.9215H28.5608C26.5396 27.0729 24.8951 25.5518 24.8951 23.6821C24.8951 21.8124 26.5396 20.2914 28.5608 20.2914H34.9215H36.3211H38.4913V27.0729Z"/>
+                                        <path d="M28.5937 21.4627C27.2707 21.4627 26.1943 22.4583 26.1943 23.6821C26.1943 24.9058 27.2707 25.9015 28.5937 25.9015C29.9166 25.9015 30.993 24.9058 30.993 23.6821C30.993 22.4583 29.9166 21.4627 28.5937 21.4627ZM28.5937 24.6068C28.0424 24.6068 27.594 24.1919 27.594 23.6821C27.594 23.1722 28.0425 22.7573 28.5937 22.7573C29.1449 22.7573 29.5934 23.1722 29.5934 23.6821C29.5934 24.1919 29.1449 24.6068 28.5937 24.6068Z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </nav> 
+                </div>
+
+            </div>       
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section id="about_us">
+            <div class="container">
+
+                <div class="wrap_img">
+                    <img src="" alt="">
+                </div>
+
+                <div class="about_us_title_wrap">
+                    <h1>Трішки про нас</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="five_reasons">
+
+            <div class="container">
+                <div class="reasons_top">
+                    <div class="reason_wrap">
+                        <svg>
+                            
+                        </svg>
+                        <p>Зручний  формат</p>
+                    </div>
+                    <div class="reason_wrap">
+                        <svg>
     
+                        </svg>
+                        <p>Підтримка  24/7</p>
+                    </div>
+                    <div class="reason_wrap">
+                        <svg>
+    
+                        </svg>
+                        <p>Конфіденційність</p>
+                    </div>
+                </div>
+
+                <div class="reasons_bottom">
+                    <div class="reason_wrap">
+                        <svg>
+                            
+                        </svg>
+                        <p>Індивідуальний підхід</p>
+                    </div>
+                    <div class="reason_wrap">
+                        <svg>
+    
+                        </svg>
+                        <p>Сертифіковані спеціалісти</p>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+
+        <section id="our_specialists">
+            <div class="container">
+            
+                <div class="wrap_content">
+
+                    <div class="wrap_img">
+                        <img src="" alt="">
+                    </div>
+
+
+                    <div class="specialists_wrap">
+                        <h3>Катерина Іваненко</h3>
+                        <div class="icons_wrap">
+                            <div class="icon_wrap">
+                                <svg>
+
+                                </svg>
+                                <p>Вища освіта</p>
+                            </div>
+                            <div class="icon_wrap">
+                                <svg>
+
+                                </svg>
+                                <p>Підвищення кваліфікації</p>
+                            </div>
+                            <div class="icon_wrap">
+                                <svg>
+
+                                </svg>
+                                <p>Підтримка 24/7</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="meta_wrap">
+                            <p>відносини у сім’ї</p>
+                            <p>гештальт</p>
+                            <p>психотравма</p>
+                            <p>страхи</p>
+                        </div>
+                        <button type="button" class="btn">Записатися</button>
+                    </div>
+
+                    <div class="specialists_wrap">
+                        <h3>Катерина Іваненко</h3>
+                        <div class="icons_wrap">
+                            <div class="icon_wrap">
+                                <svg>
+
+                                </svg>
+                                <p>Вища освіта</p>
+                            </div>
+                            <div class="icon_wrap">
+                                <svg>
+
+                                </svg>
+                                <p>Підвищення кваліфікації</p>
+                            </div>
+                            <div class="icon_wrap">
+                                <svg>
+
+                                </svg>
+                                <p>Підтримка 24/7</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="meta_wrap">
+                            <p>відносини у сім’ї</p>
+                            <p>гештальт</p>
+                            <p>психотравма</p>
+                            <p>страхи</p>
+                        </div>
+                        <button type="button" class="btn">Записатися</button>
+
+                    </div>
+
+                    <div class="specialists_wrap">
+                        <h3>Катерина Іваненко</h3>
+                        <div class="icons_wrap">
+                            <div class="icon_wrap">
+                                <svg>
+
+                                </svg>
+                                <p>Вища освіта</p>
+                            </div>
+                            <div class="icon_wrap">
+                                <svg>
+
+                                </svg>
+                                <p>Підвищення кваліфікації</p>
+                            </div>
+                            <div class="icon_wrap">
+                                <svg>
+
+                                </svg>
+                                <p>Підтримка 24/7</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="meta_wrap">
+                            <p>відносини у сім’ї</p>
+                            <p>гештальт</p>
+                            <p>психотравма</p>
+                            <p>страхи</p>
+                        </div>
+                        <button type="button" class="btn">Записатися</button>
+                    </div>
+                   
+                </div>
+
+            </div>
+            
+        </section>
+
+        
+        
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer_upper_line">
+                <div class="footer_logo">
+                    <div class="pic">
+                        <a href="#">
+                            <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="../assets/images/logo-gorshenko.png" alt="Logo Gorshenko">
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="wrap_foot_menu">
+                    <nav class="footer_menu_second">
+                        <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <li><a itemprop="url" href="#">Психологам</a></li>
+                            <li><a itemprop="url" href="#">Семінари</a></li>
+                            <li><a itemprop="url" href="#">Відгуки</a></li>
+                            <li><a itemprop="url" href="#">Контакти</a></li>
+                        </ul>
+                    </nav> 
+            
+                    <nav class="footer_menu_first">
+                        <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <li><a itemprop="url" href="#">Головна</a></li>
+                            <li><a itemprop="url" href="#">Про нас</a></li>
+                            <li><a itemprop="url" href="#">Послуги</a></li>
+                            <li><a itemprop="url" href="#">Ціни</a></li>
+                            <li>
+                                <a itemprop="url" href="#">
+                                    Оплата
+                                    <svg class="footer_wallet" width="40" height="37" viewbox="0 0 40 37" fill="#536779" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M39.1911 18.9967H36.3211V12.1691C36.3211 12.1378 36.3178 12.1072 36.316 12.0763V6.81856C36.316 6.46104 36.0028 6.17125 35.6162 6.17125H28.1962L21.7814 0.237457C21.6501 0.116097 21.4721 0.0478935 21.2865 0.0478935C21.1009 0.0478935 20.9229 0.116076 20.7916 0.237457L15.9546 4.71172L13.6807 2.60829C13.4074 2.35552 12.9643 2.35552 12.691 2.60829L8.8346 6.1754C8.80913 6.17279 8.78324 6.17125 8.757 6.17125H0.809175C0.422664 6.17125 0.109375 6.46104 0.109375 6.81856V13.7079C0.109375 13.729 0.110642 13.7499 0.112797 13.7705V35.1951C0.112797 36.1639 0.964908 36.9521 2.01226 36.9521H34.4216C35.469 36.9521 36.3211 36.1639 36.3211 35.1951V28.3675H39.1911C39.5777 28.3675 39.8909 28.0777 39.8909 27.7202V19.6441C39.8909 19.2865 39.5776 18.9967 39.1911 18.9967ZM34.9164 7.4659V10.4747C34.7584 10.4351 34.593 10.4121 34.4216 10.4121H32.7808L29.5957 7.4659H34.9164ZM21.2865 1.61065L30.8015 10.4121H28.6774L20.2245 2.59302L21.2865 1.61065ZM19.2348 3.50856L26.6979 10.4121H22.1173L16.9444 5.62716L19.2348 3.50856ZM13.1858 3.98149L14.9649 5.62714L15.9546 6.54258L20.1378 10.4121H18.2303L12.2321 4.86369L13.1858 3.98149ZM16.2508 10.4121H6.23386L11.2423 5.77923L16.2508 10.4121ZM4.25442 10.4121H2.01226C1.8378 10.4121 1.6696 10.4357 1.509 10.4766V7.4659H7.43949L4.25442 10.4121ZM34.9215 35.1951C34.9215 35.45 34.6972 35.6575 34.4216 35.6575H2.01226C1.73666 35.6575 1.51242 35.45 1.51242 35.1951V12.1691C1.51242 11.9142 1.73666 11.7067 2.01226 11.7067H34.4216C34.6801 11.7067 34.8908 11.8898 34.9164 12.1226V13.7079C34.9164 13.7333 34.9185 13.7583 34.9215 13.783V18.9968H28.5608C25.7678 18.9968 23.4955 21.0986 23.4955 23.6821C23.4955 26.2657 25.7678 28.3676 28.5608 28.3676H34.9215V35.1951H34.9215ZM38.4913 27.0729H36.3211H34.9215H28.5608C26.5396 27.0729 24.8951 25.5518 24.8951 23.6821C24.8951 21.8124 26.5396 20.2914 28.5608 20.2914H34.9215H36.3211H38.4913V27.0729Z"/>
+                                        <path d="M28.5937 21.4627C27.2707 21.4627 26.1943 22.4583 26.1943 23.6821C26.1943 24.9058 27.2707 25.9015 28.5937 25.9015C29.9166 25.9015 30.993 24.9058 30.993 23.6821C30.993 22.4583 29.9166 21.4627 28.5937 21.4627ZM28.5937 24.6068C28.0424 24.6068 27.594 24.1919 27.594 23.6821C27.594 23.1722 28.0425 22.7573 28.5937 22.7573C29.1449 22.7573 29.5934 23.1722 29.5934 23.6821C29.5934 24.1919 29.1449 24.6068 28.5937 24.6068Z"/>
+                                    </svg>
+                                </a></li>
+                            
+                        </ul>
+                    </nav> 
+                </div>
+        
+                <div class="wrap_soc_menu">
+                    <nav class="footer_menu_third">
+                        <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <li><a itemprop="url" href="#">Сімейний психотерапевт</a></li>
+                            <li><a itemprop="url" href="#">Дитячий психотерапевт</a></li>
+                            <li><a itemprop="url" href="#">Індивідуальні заняття</a></li>
+                        </ul>
+                    </nav> 
+            
+                    <div class="socials">
+                        <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <li>
+                                <a itemprop="url" href="https://www.instagram.com/" rel="nofollow, noreferrer" target="_blank" title="Instagram">
+                                <div class="footer_soc_wrap">
+                                    <svg width="30" height="30" viewbox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 2.71097C18.9759 2.71097 19.5181 2.71097 21.1446 2.71097C22.5904 2.71097 23.3133 3.07241 23.8554 3.25313C24.5783 3.61458 25.1205 3.7953 25.6627 4.33747C26.2048 4.87964 26.5663 5.42181 26.747 6.1447C26.9277 6.68687 27.1084 7.40976 27.2892 8.85555C27.2892 10.4821 27.2892 10.8435 27.2892 15.0001C27.2892 19.1567 27.2892 19.5182 27.2892 21.1447C27.2892 22.5905 26.9277 23.3134 26.747 23.8555C26.3855 24.5784 26.2048 25.1206 25.6627 25.6628C25.1205 26.2049 24.5783 26.5664 23.8554 26.7471C23.3133 26.9278 22.5904 27.1086 21.1446 27.2893C19.5181 27.2893 19.1566 27.2893 15 27.2893C10.8434 27.2893 10.4819 27.2893 8.85542 27.2893C7.40964 27.2893 6.68675 26.9278 6.14458 26.7471C5.42169 26.3857 4.87952 26.2049 4.33735 25.6628C3.79518 25.1206 3.43374 24.5784 3.25301 23.8555C3.07229 23.3134 2.89157 22.5905 2.71084 21.1447C2.71084 19.5182 2.71084 19.1567 2.71084 15.0001C2.71084 10.8435 2.71084 10.4821 2.71084 8.85555C2.71084 7.40976 3.07229 6.68687 3.25301 6.1447C3.61446 5.42181 3.79518 4.87964 4.33735 4.33747C4.87952 3.7953 5.42169 3.43386 6.14458 3.25313C6.68675 3.07241 7.40964 2.89169 8.85542 2.71097C10.4819 2.71097 11.0241 2.71097 15 2.71097ZM15 0.00012207C10.8434 0.00012207 10.4819 0.00012207 8.85542 0.00012207C7.22892 0.00012207 6.14458 0.361569 5.24097 0.723015C4.33735 1.08446 3.43374 1.62663 2.53012 2.53024C1.62651 3.43386 1.26506 4.15675 0.722893 5.24109C0.361447 6.1447 0.180723 7.22904 0 8.85555C0 10.4821 0 11.0242 0 15.0001C0 19.1567 0 19.5182 0 21.1447C0 22.7712 0.361447 23.8555 0.722893 24.7592C1.08434 25.6628 1.62651 26.5664 2.53012 27.47C3.43374 28.3736 4.15663 28.7351 5.24097 29.2772C6.14458 29.6387 7.22892 29.8194 8.85542 30.0001C10.4819 30.0001 11.0241 30.0001 15 30.0001C18.9759 30.0001 19.5181 30.0001 21.1446 30.0001C22.7711 30.0001 23.8554 29.6387 24.759 29.2772C25.6627 28.9158 26.5663 28.3736 27.4699 27.47C28.3735 26.5664 28.7349 25.8435 29.2771 24.7592C29.6386 23.8555 29.8193 22.7712 30 21.1447C30 19.5182 30 18.976 30 15.0001C30 11.0242 30 10.4821 30 8.85555C30 7.22904 29.6386 6.1447 29.2771 5.24109C28.9157 4.33747 28.3735 3.43386 27.4699 2.53024C26.5663 1.62663 25.8434 1.26518 24.759 0.723015C23.8554 0.361569 22.7711 0.180845 21.1446 0.00012207C19.5181 0.00012207 19.1566 0.00012207 15 0.00012207Z"/>
+                                        <path d="M15 7.22904C10.6627 7.22904 7.22892 10.6628 7.22892 15.0001C7.22892 19.3375 10.6627 22.7712 15 22.7712C19.3374 22.7712 22.7711 19.3375 22.7711 15.0001C22.7711 10.6628 19.3374 7.22904 15 7.22904ZM15 20.0604C12.2892 20.0604 9.93976 17.8917 9.93976 15.0001C9.93976 12.2893 12.1084 9.93988 15 9.93988C17.7108 9.93988 20.0602 12.1086 20.0602 15.0001C20.0602 17.711 17.7108 20.0604 15 20.0604Z"/>
+                                        <path d="M22.9518 8.85555C23.9499 8.85555 24.759 8.04642 24.759 7.04832C24.759 6.05021 23.9499 5.24109 22.9518 5.24109C21.9537 5.24109 21.1446 6.05021 21.1446 7.04832C21.1446 8.04642 21.9537 8.85555 22.9518 8.85555Z"/>
+                                    </svg>
+                                </div>                                
+                                </a>
+                            </li>
+                            <li>
+                                <a itemprop="url" href="https://web.telegram.org/z/" rel="nofollow, noreferrer" target="_blank" title="Telegram">
+                                <div class="footer_soc_wrap">
+                                    <svg width="29" height="26" viewbox="0 0 29 26" fill="#FEFEFE" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M29 0.90346L24.4919 24.4385C24.4919 24.4385 23.8611 26.0703 22.1283 25.2877L11.7269 17.029L11.6786 17.0047C13.0836 15.6982 23.9786 5.55412 24.4548 5.0943C25.1919 4.38217 24.7343 3.95822 23.8784 4.49616L7.78519 15.0796L1.57646 12.9163C1.57646 12.9163 0.599386 12.5564 0.505389 11.7738C0.410156 10.9899 1.60861 10.566 1.60861 10.566L26.9197 0.283543C26.9197 0.283543 29 -0.662983 29 0.90346Z"/>
+                                    </svg>
+                                </div>  
+                                </a>
+                            </li>
+                            <li>
+                                <a itemprop="url" href="https://www.viber.com/" rel="nofollow, noreferrer" target="_blank" title="Viber">
+                                <div class="footer_soc_wrap">
+                                    <svg width="32" height="35" viewbox="0 0 32 35" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M24.3809 1.31899C18.6636 0.227165 12.7264 0.227165 7.00916 1.31899C4.48036 1.86491 1.29188 4.92202 0.742147 7.32404C-0.247382 12.0189 -0.247382 16.8229 0.742147 21.5178C1.40183 23.9198 4.59031 26.9769 7.00916 27.5228C7.11911 27.5228 7.22905 27.632 7.22905 27.7412V34.6197C7.22905 34.9473 7.66885 35.1656 7.88874 34.8381L11.1872 31.4534C11.1872 31.4534 13.8259 28.7239 14.2657 28.2871C14.2657 28.2871 14.3757 28.1779 14.4856 28.1779C17.784 28.2871 21.1924 27.9596 24.4908 27.4137C27.0196 26.8678 30.2081 23.8106 30.7579 21.4086C31.7474 16.7138 31.7474 11.9097 30.7579 7.21486C30.0982 4.92202 26.9097 1.86491 24.3809 1.31899ZM24.4908 21.8453C23.9411 22.9372 23.2814 23.8106 22.1819 24.3566C21.8521 24.4657 21.5223 24.5749 21.1924 24.6841C20.7526 24.5749 20.4228 24.4657 20.0929 24.3566C16.5746 22.9372 13.2762 20.9719 10.6374 18.1331C9.20812 16.4954 7.99869 14.6393 7.00916 12.674C6.56937 11.6914 6.12958 10.8179 5.79974 9.83525C5.46989 8.96178 6.01963 8.08832 6.56937 7.43323C7.11911 6.77813 7.7788 6.3414 8.54843 6.01385C9.09817 5.6863 9.64791 5.90467 10.0877 6.3414C10.9673 7.43323 11.8469 8.52505 12.5065 9.72606C12.9463 10.4903 12.8364 11.3638 12.0668 11.9097C11.8469 12.0189 11.7369 12.1281 11.517 12.3464C11.4071 12.4556 11.1872 12.5648 11.0772 12.7832C10.8573 13.1107 10.8573 13.4383 10.9673 13.7658C11.8469 16.277 13.4961 18.2423 16.0249 19.3341C16.4647 19.5525 16.7945 19.6617 17.3442 19.6617C18.1139 19.5525 18.4437 18.679 18.9935 18.2423C19.5432 17.8056 20.2029 17.8056 20.8626 18.1331C21.4123 18.4607 21.962 18.8974 22.6217 19.3341C23.1715 19.7709 23.7212 20.0984 24.2709 20.5352C24.6008 20.7535 24.7107 21.2994 24.4908 21.8453ZM19.873 13.6566C19.6531 13.6566 19.7631 13.6566 19.873 13.6566C19.4332 13.6566 19.3233 13.4383 19.2133 13.1107C19.2133 12.8924 19.2133 12.5648 19.1034 12.3464C18.9935 11.9097 18.7736 11.473 18.3338 11.1454C18.1139 11.0363 17.894 10.9271 17.6741 10.8179C17.3442 10.7087 17.1243 10.7087 16.7945 10.7087C16.4647 10.5995 16.3547 10.3812 16.3547 10.0536C16.3547 9.83525 16.6846 9.61688 16.9044 9.61688C18.6636 9.72606 19.983 10.7087 20.2029 12.7832C20.2029 12.8924 20.2029 13.1107 20.2029 13.2199C20.2029 13.4383 20.0929 13.6566 19.873 13.6566ZM18.7736 8.8526C18.2238 8.63424 17.6741 8.41587 17.0144 8.30669C16.7945 8.30669 16.4647 8.1975 16.2448 8.1975C15.9149 8.1975 15.695 7.97914 15.805 7.65159C15.805 7.32404 16.0249 7.10568 16.3547 7.21486C17.4542 7.32404 18.4437 7.54241 19.4332 7.97914C21.4123 8.96178 22.5118 10.5995 22.8416 12.7832C22.8416 12.8924 22.8416 13.0015 22.8416 13.1107C22.8416 13.3291 22.8416 13.5475 22.8416 13.875C22.8416 13.9842 22.8416 14.0934 22.8416 14.2026C22.7317 14.6393 21.962 14.7485 21.8521 14.2026C21.8521 14.0934 21.7421 13.875 21.7421 13.7658C21.7421 12.7832 21.5223 11.8005 21.0825 10.9271C20.4228 9.94443 19.6531 9.28933 18.7736 8.8526ZM24.7107 15.4036C24.3809 15.4036 24.161 15.076 24.161 14.7485C24.161 14.0934 24.051 13.4383 23.9411 12.7832C23.5013 9.28933 20.6427 6.45058 17.2343 5.90467C16.6846 5.79548 16.1348 5.79549 15.695 5.6863C15.3652 5.6863 14.9254 5.6863 14.8154 5.24957C14.7055 4.92202 15.0353 4.59447 15.3652 4.59447C15.4751 4.59447 15.5851 4.59447 15.5851 4.59447C20.0929 4.70366 15.805 4.59447 15.5851 4.59447C20.2029 4.70366 24.051 7.76078 24.8207 12.3464C24.9306 13.1107 25.0406 13.875 25.0406 14.7485C25.2605 15.076 25.0406 15.4036 24.7107 15.4036Z"/>
+                                    </svg>
+                                </div>  
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+    
+            <div class="footer_contacts_wrap">
+                <div class="phone">
+                    <a href="tel:+380974070110">
+                        <svg class="icon_footer" width="40" height="40" viewbox="0 0 40 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="5"/>
+                            <path d="M23.7333 22.1427C22.6667 23.3232 22.6667 24.5037 21.6 24.5037C20.5333 24.5037 19.4667 23.3232 18.4 22.1427C17.3333 20.9622 16.2667 19.7817 16.2667 18.6012C16.2667 17.4207 17.3333 17.4207 18.4 16.2402C19.4667 15.0597 16.2667 11.5182 15.2 11.5182C14.1333 11.5182 12 15.0597 12 15.0597C12 17.4207 14.192 22.2076 16.2667 24.5037C18.3413 26.7998 22.6667 29.2257 24.8 29.2257C24.8 29.2257 28 26.8647 28 25.6842C28 24.5037 24.8 20.9622 23.7333 22.1427Z" fill="white"/>
+                        </svg>
+                        +38 (097) <b>&nbsp;407-01-10</b>
+                    </a>
+                </div>
+                <div class="mail">
+                    <a href="mailto:hello@mgoroshenko.com.ua" rel="nofollow, noreferrer" target="_blank">
+                        <svg class="icon_footer" width="40" height="40" viewbox="0 0 40 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.00012207" width="40" height="40" rx="5"/>
+                            <path d="M27.7778 12.0001H12.2222C10.9949 12.0001 10 13.0235 10 14.2858V25.7144C10 26.9768 10.9949 28.0001 12.2222 28.0001H27.7778C29.0051 28.0001 30 26.9768 30 25.7144V14.2858C30 13.0235 29.0051 12.0001 27.7778 12.0001Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 15.0001L20 21.0001L30 15.0001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        hello@mgoroshenko.com.ua
+                    </a>
+                </div>
+                <div class="address">
+                    <a href="https://goo.gl/maps/p1smwKevMyWX4RhLA" rel="nofollow, noreferrer" target="_blank">
+                        <svg class="icon_footer map_icon_mg" width="30" height="40" viewbox="0 0 30 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30 15.4545C30 6.89394 23.3088 0 15 0C6.69118 0 0 6.89394 0 15.4545C0 24.0152 15 40 15 40C15 40 30 24.0152 30 15.4545ZM8.0147 15.1515C8.0147 11.2121 11.1765 7.95455 15 7.95455C18.8235 7.95455 21.9853 11.1364 21.9853 15.1515C21.9853 19.0909 18.8971 22.3485 15 22.3485C11.1765 22.3485 8.0147 19.0909 8.0147 15.1515Z"/>
+                        </svg>
+                        Львів, вул. Зелена 44
+                    </a>
+                </div>
+            </div>
+    
+            <div class="btn-centr">
+                <button class="btn" type="button">Вам передзвонити?</button>
+            </div>
+        </div>
+       
+
+    </footer>
+
+    <script src="../assets/js/jquery-3.6.0.min.js" ></script>
+    <script src="../assets/js/lazyload.prod.js"></script>
+
+    <script src="../assets/plugins/leaflet/leaflet.js"></script>
+
+    <script src="../assets/js/main.js"></script>
+
+    <!-- <script>
+
+        //фіксація горизонтального меню, яке знаходиться нижче першого екрану
+        $(window).on('scroll', function(){
+            if($(window).scrollTop()>$("#first_screen").height()){
+                $('header').addClass('fixed');
+            }else{
+                $('header').removeClass('fixed');
+            }
+        })
+
+
+        function toggleMenu (){
+            $('.hamburger').toggleClass('is-active');
+                    $('#side_block, #page_overlay').toggleClass('open');
+                    $('body').toggleClass('lock');
+            }
+    
+        //активація і дезактивація hamburger меню по клікам на: гамбургер, оверлей, мобільні пункти меню
+            $(function() {
+                $('.hamburger, #page_overlay, .mobile_menu a').on('click', function(){
+                    toggleMenu ();
+                })
+            })
+
+        //плавний скрол до секції, при клікі на мобільні і головні пункти меню і стрілка на first_screen 
+            $(function(){
+                $('.mobile_menu a, .main_menu a, .first_screen a').on('click', function(e){
+                    e.preventDefault(); //заборонили браузеру проскролити до id
+                  $('html, body').animate({scrollTop:$($(this).attr('href')).offset().top-$('header').outerHeight()}, 800)
+
+                })
+            })
+        //активація "скляного" горизонтального меню
+            $(window).on('scroll', ()=>{
+                    if($(window).scrollTop()>480) {
+                        $('header').addClass('scroll')
+                    }else{
+                        $('header').removeClass('scroll')
+                    }
+            })
+
+
+    </script> -->
+
 </body>
 </html>
